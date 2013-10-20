@@ -1,4 +1,5 @@
 # Django settings for experiment_report_online project.
+import os.path
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -72,7 +73,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	"/home/wang/program/python/development/git_practice/experiment_report_online/static",
+#	"/home/wang/program/git_practice/experiment_report_online/static",
+	os.path.join(os.path.dirname(__file__), '../static/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -112,7 +114,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	"/home/wang/program/python/development/git_practice/experiment_report_online/templates",
+#	"/home/wang/program/git_practice/experiment_report_online/templates",
+	os.path.join(os.path.dirname(__file__), '../templates')
 )
 
 INSTALLED_APPS = (

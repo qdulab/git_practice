@@ -7,4 +7,4 @@ def index(request):
 	return HttpResponse("Hello world!")
 
 def user_login(request):
-	return render_to_response('base.html')
+	return render_to_response('logins/login.html')
